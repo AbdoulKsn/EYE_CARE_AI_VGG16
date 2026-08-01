@@ -410,7 +410,8 @@ elif page == "ℹ️ À propos":
 
     ### 📈 Résultat
     **78,2% d'accuracy** sur le jeu de validation — un résultat honnête compte tenu du
-    volume de données disponible, avec une faiblesse identifiée sur la détection du glaucome.
+    volume de données disponible, avec une faiblesse identifiée sur la détection de la rétinopathie
+    diabétique.
     """)
 
     st.markdown("""
