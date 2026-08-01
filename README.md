@@ -89,4 +89,4 @@ Place ce bloc juste avant `charger_modele()` dans `app.py`.
 
 L'application affiche déjà :
 - Un avertissement médical clair (l'outil ne remplace pas un diagnostic).
-- Une alerte spécifique quand la classe prédite est "diabetic_retinopathy", classe pour laquelle le modèle a un recall plus faible (~§8 %).
+- Une alerte spécifique quand la classe prédite est "diabetic_retinopathy", classe pour laquelle le modèle a un recall plus faible (~68 %).
