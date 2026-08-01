@@ -77,7 +77,7 @@ import os
 import urllib.request
 
 MODEL_PATH = "EyeCare_AI_VGG16_Final.keras"
-MODEL_URL = "https://huggingface.co/<ton-compte>/<ton-repo>/resolve/main/best_vgg16.keras"
+MODEL_URL = "https://huggingface.co/<ton-compte>/<ton-repo>/resolve/main/EyeCare_AI_VGG16_Final.keras"
 
 if not os.path.exists(MODEL_PATH):
     urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
@@ -89,4 +89,4 @@ Place ce bloc juste avant `charger_modele()` dans `app.py`.
 
 L'application affiche déjà :
 - Un avertissement médical clair (l'outil ne remplace pas un diagnostic).
-- Une alerte spécifique quand la classe prédite est "glaucome", classe pour laquelle le modèle a un recall plus faible (~48 %).
+- Une alerte spécifique quand la classe prédite est "diabetic_retinopathy", classe pour laquelle le modèle a un recall plus faible (~§8 %).
