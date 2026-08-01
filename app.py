@@ -41,6 +41,7 @@ MODEL_METRICS = {
     "diabetic_retinopathy":  {"precision": 0.91, "recall": 0.68, "f1": 0.78, "support": 217},
     "glaucoma":              {"precision": 0.79, "recall": 0.72, "f1": 0.76, "support": 201},
     "normal":                {"precision": 0.64, "recall": 0.85, "f1": 0.73, "support": 221},
+
     
 }
 GLOBAL_ACCURACY = 0.782
@@ -210,7 +211,9 @@ if page == "🔍 Diagnostic":
         col_img, col_result, col_gauge = st.columns([1.1, 1, 1])
 
         with col_img:
-            st.image(image, caption="Image analysée", use_container_width=True)
+
+            #st.image(image, caption="Image analysée", use_container_width=True)
+            st.image(image, caption="Image analysée", use_column_width=True)
 
         with col_result:
             st.markdown(f"""
